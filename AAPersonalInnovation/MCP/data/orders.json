@@ -1,0 +1,63 @@
+{
+  "customers": [
+    {
+      "customer_id": "C1001",
+      "name": "Alice Zhang",
+      "phone": "13800000001",
+      "segment": "vip"
+    },
+    {
+      "customer_id": "C1002",
+      "name": "Bob Li",
+      "phone": "13800000002",
+      "segment": "regular"
+    },
+    {
+      "customer_id": "C1003",
+      "name": "Carol Wang",
+      "phone": "13800000003",
+      "segment": "new"
+    }
+  ],
+  "orders": [
+    {
+      "order_id": "O1001",
+      "customer_id": "C1001",
+      "status": "PAID",
+      "amount": 299.0,
+      "currency": "CNY",
+      "created_at": "2026-03-29T09:10:00+08:00",
+      "notes": [
+        {
+          "author": "system",
+          "content": "First successful order.",
+          "created_at": "2026-03-29T09:10:00+08:00"
+        }
+      ]
+    },
+    {
+      "order_id": "O1002",
+      "customer_id": "C1002",
+      "status": "PAID",
+      "amount": 89.9,
+      "currency": "CNY",
+      "created_at": "2026-03-30T14:25:00+08:00",
+      "notes": [
+        {
+          "author": "ops",
+          "content": "Status changed from PENDING to PAID; reason: manual verification",
+          "created_at": "2026-03-31T23:22:57+08:00"
+        }
+      ]
+    },
+    {
+      "order_id": "O1003",
+      "customer_id": "C1003",
+      "status": "REFUNDED",
+      "amount": 59.5,
+      "currency": "CNY",
+      "created_at": "2026-03-31T08:40:00+08:00",
+      "notes": []
+    }
+  ]
+}
